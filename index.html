@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/index.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/spotify.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/profile.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/newProfileDesign.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/concept.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Aleo:700" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <title>Day 1</title>
+  </head>
+  <body>
+
+    <section id="gridContainer">
+      <section id="mainHeader">
+        <header id="mainHeader">
+          <div class="logo">
+            <a href="index.html">
+              <h5>TROPHY COUNT</h5>
+            </a>
+          </div>
+          <div id="mainNavContainer">
+            <div class="searchBar">
+              <input type="text" class="search" name="search" placeholder="      Search for players...">
+              <img src="resources/images/search.svg" class="searchIcon"  onclick="search()" title="search for teams, players and orgs." alt="search for teams, orgs and players.">
+            </div>
+            <nav id="mainNav">
+              <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="profile.html"><i class="fas fa-user"></i>Profile</a></li>
+              </ul>
+            </nav>
+            <div class="burgerMenu">
+              <span id="dropbtn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+              <div id="dropdown">
+                <a href="#">Tournaments</a>
+                <a href="#">Free Agents</a>
+                <a href="#">Match Finder</a>
+                <a href="#">Register your Org</a>
+                <a href="#">Contact</a>
+                <a href="#">Log Out</a>
+              </div>
+            </div>
+            <div class="burgerMenuMobile">
+              <span id="dropbtn" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+              <div id="dropdown">
+                <a href="#">Home</a>
+                <a href="#">Profile</a>
+                <a href="#">Tournaments</a>
+                <a href="#">Free Agents</a>
+                <a href="#">Match Finder</a>
+                <a href="#">Register your Org</a>
+                <a href="#">Contact</a>
+                <a href="#">Log Out</a>
+              </div>
+            </div>
+          </div>
+        </header>
+      </section>
+
+      <section id="sideMenu">
+        <div id="sideContainer">
+          <i class="fas fa-2x fa-home"></i>
+          <i class="fas fa-2x fa-user"></i>
+          <i class="fas fa-2x fa-envelope"></i>
+          <i class="fas fa-2x fa-cog"></i>
+          <i id="spotifyy" class="fab fa-2x fa-spotify"></i>
+        </div>
+      </section>
+
+      <section id="chat">
+        <div class="transformContainer">
+          <p>Old Page</p>
+        </div>
+        <div>
+          <div class="newContainer">
+            <p>Home</p>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <section id="spotify">
+        <!-- Spotify Playlist -->
+            <div class="spotifyPlaylist">
+              <!-- Song Info -->
+              <div class="song">
+                <div class="coverArt">
+                  <a href="/album info"><img src="resources/images/coverart.jpg" alt="album cover"></a>
+                </div>
+                <div class="artistInfo">
+                  <p><a href="/title">Title of the Song</a><a href="/favorite" class="favorite" title="favorite">&#9825;</a></p>
+                  <h6><a href="/artist">Artist Name</a></h6>
+                </div>
+              </div>
+              <!-- Song Controls -->
+              <div class="controlContainer">
+                <div class="controls">
+                  <a href="#" class="shuffle" title="Shuffle"><i class="fa fa-random"></i></a>
+                  <a href="#" class="back" title="Back"><i class="fa fa-step-backward"></i></a>
+                  <a href="#" class="play" title="Play"><i class="fa fa-play"></i></a>
+                  <a href="#" class="pause" title="Pause"><i class="fas fa-pause"></i></a>
+                  <a href="#" class="skip" title="Skip"><i class="fa fa-step-forward"></i></a>
+                  <a href="#" class="replay" title="Replay"><i class="fa fa-redo"></i></a>
+                </div>
+                <div class="songStatus">
+                  <p>0:00</p>
+                  <div class="slider">
+                    <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                  </div>
+                  <p>2:50</p>
+                </div>
+              </div>
+              <!-- Volume -->
+              <div class="volumeControls">
+                <div class="media">
+                  <a href="#" class="queue" title="Queue"><i class="fa fa-bars"></i></a>
+                  <a href="#" class="devices" title="Devices"><i class="fa fa-mobile-alt"></i></a>
+                  <a href="#" class="mute" title="Volume"><i class="fa fa-volume-down"></i></a>
+                  <a href="#" class="unmute" title="Mute"><i class="fas fa-volume-mute"></i></a>
+                </div>
+                <div class="volumeBar">
+                  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                </div>
+              </div>
+
+            </div>
+
+            <div class="close">
+              <p>Close Spotify</p>
+            </div>
+      </section>
+
+    </section>
+
+  <script type="text/javascript" src="resources/js/concept.js"></script>
+  <script type="text/javascript" src="resources/js/newProfileDesign.js"></script>
+  <script type="text/javascript" src="resources/js/main.js"></script>
+  </body>
+</html>

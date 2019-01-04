@@ -1,0 +1,107 @@
+#gridContainer {
+  margin: 0 auto;
+  padding: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(40, 1fr);
+  grid-template-rows: repeat(40, 1fr);
+  height: calc(100vh);
+  max-width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+#gridContainer > section {
+  position: relative;
+  color: white;
+}
+
+/* Header */
+#mainHeader {
+  grid-column: 1 / 41;
+  grid-row: 1 / 3;
+  position: absolute;
+}
+
+/* Side Menu */
+#sideMenu {
+  z-index: 1;
+  grid-column: 1 / 4;
+  grid-row: 3 / 38;
+  margin-top: 10px;
+  text-align: center;
+  -webkit-box-shadow: 10px 0px 39px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 0px 39px -4px rgba(0,0,0,0.75);
+  box-shadow: 10px 0px 39px -4px rgba(0,0,0,0.75);
+}
+
+#sideContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+#sideContainer div > p {
+  font-size: .8rem;
+  text-align: center;
+}
+/* Sub Menu */
+#subMenu {
+  grid-column: 3 / 6;
+  grid-row: 3 / 38;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-right: 1px solid black;
+  height: 100%;
+  transition: 300ms linear;
+}
+#sideMenu p {
+  cursor: pointer;
+}
+#sideContainer i {
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  transition: 300ms linear;
+}
+
+/* Chat */
+#chat {
+  margin-top: 10px;
+  grid-column: 4 / 41;
+  grid-row: 3 / 38;
+  -webkit-box-shadow: inset -1px -1px 42px -3px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset -1px -1px 42px -3px rgba(0,0,0,0.75);
+  box-shadow: inset -1px -1px 42px -3px rgba(0,0,0,0.75);
+  font-size: 2rem;
+}
+
+/* Main */
+#main {
+  grid-column: 17 / 41;
+  grid-row: 3 / 41;
+}
+
+#main .carousel {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 0px 10px 42px -13px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 10px 42px -13px rgba(0,0,0,0.75);
+  box-shadow: 0px 10px 42px -13px rgba(0,0,0,0.75);
+}
+
+/* Spotify */
+#spotify {
+  grid-column: 1 / 41;
+  grid-row: 38 / 41;
+}

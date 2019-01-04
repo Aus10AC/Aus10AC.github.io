@@ -1,0 +1,60 @@
+main {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+}
+
+main button {
+  height: 2rem;
+  width: 3rem;
+  margin: 1rem;
+}
+
+main ul {
+  margin: 2rem;
+  list-style-type: none;
+}
+
+.teamCard {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 20rem;
+  width: 15rem;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.teamCard h3 {
+  font-size: 2rem;
+  margin: .5rem auto;
+}
+
+.teamCard p {
+  margin-top: 1rem;
+  text-decoration: underline;
+}
+
+.teamCard ul {
+  text-align: left;
+  margin: 2rem 0 0 0;
+}
+
+.teamCard i {
+  margin: .5rem;
+  cursor: pointer;
+}
+
+.teamCard li {
+  color: rgba(255, 255, 255, 0.7);
+  display: inline-block;
+}
+
+.playerInput {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.playerList button {
+  width: 3.5rem;
+  height: 1.5rem;
+}
